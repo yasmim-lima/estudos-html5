@@ -1,0 +1,56 @@
+<!--
+  Crie um arquivo HTML com um formulário de inscrição contendo os seguintes campos:
+    1. Nome, que deve ser um input de texto
+    2. Email, que deve ser um input de email
+    3. WhatsApp, que deve ser um input de telefone
+    4. Área de atuação, que deve ser um input de radio com as opções: Desenvolvimento, Quality Assurance (QA), Análise de Dados e Infraestrutura
+    5. Observações, que deve ser uma textarea
+    6. Uma checkbox com o rótulo “Desejo receber novidades e ofertas por email.”
+-->
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Inscrição</title>
+</head>
+
+<body>
+  <h1>Formulário de Inscrição</h1>
+  <form>
+    <label for="nome">Nome:</label>
+    <br>
+    <input type="text" id="nome" name="nome" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <br>
+    <input type="email" id="email" name="email">
+    <br><br>
+    <label for="telefone">WhatsApp:</label>
+    <br>
+    <input type="tel" id="telefone" name="telefone">
+    <br><br>
+    <label>Área de atuação:</label>
+    <br>
+    <input type="radio" id="dev" name="area" value="dev" required>
+    <label for="dev">Desenvolvimento</label>
+    <input type="radio" id="qa" name="area" value="qa" required>
+    <label for="qa">Quality Assurance (QA)</label>
+    <input type="radio" id="dados" name="area" value="dados" required>
+    <label for="dados">Análise de Dados</label>
+    <input type="radio" id="infra" name="area" value="infra" required>
+    <label for="infra">Infraestrutura</label>
+    <br><br>
+    <label for="obs">Observações:</label>
+    <br>
+    <textarea name="obs" id="obs"></textarea>
+    <br><br>
+    <input type="checkbox" name="infos" id="infos">
+    <label for="infos">Desejo receber novidades e ofertas por email.</label>
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
